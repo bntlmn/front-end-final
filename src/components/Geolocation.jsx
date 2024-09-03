@@ -41,7 +41,6 @@ const Geolocation = () => {
 
   return (
     <div>
-      <h2>IP Geolocation Tool</h2>
       <input
         type="text"
         placeholder="Enter IP address"
@@ -64,7 +63,7 @@ const Geolocation = () => {
         <p><br/>This application is brought to you by the use of the following API providers
         <br/><strong><i>AbstractApi</i></strong>
         <br/><strong><i>IQAir</i></strong>
-        <br/><strong><i>Ipify</i></strong></p>
+        <br/><strong><i>IPify</i></strong></p>
         </div>
       )}
     </div>
