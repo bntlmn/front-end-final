@@ -1,8 +1,4 @@
-# React + Vite
+FRONT-END FINAL PROJECT (hehe)
+Link to the actual Webpage: https://front-end-final-iota.vercel.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to the repository of my actual repo for the final project in our front-end class.
