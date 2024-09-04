@@ -16,8 +16,7 @@ const AirQuality = ({ latitude, longitude }) => {
 
   useEffect(() => {
     if (latitude && longitude) {
-      const apiKey = 'abde7388-355c-4644-a812-8717a0a2f108';
-      const url = `http://api.airvisual.com/v2/nearest_city?lat=${latitude}&lon=${longitude}&key=${apiKey}`;
+      const url = `http://api.airvisual.com/v2/nearest_city?lat=${latitude}&lon=${longitude}&key=abde7388-355c-4644-a812-8717a0a2f108`;
       httpGetAsync(url, (response) => {
         const data = JSON.parse(response);
         setAirQualityData(data);
