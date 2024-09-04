@@ -50,22 +50,27 @@ const Geolocation = () => {
       <button onClick={fetchGeoData}>Get Location Information</button>
 
       {geoData && (
-        <div>
-          <h3>Geolocation Data:</h3>
-          <p><strong>IP Address:</strong> {geoData.ip_address}</p>
-          <p><strong>Country:</strong> {geoData.country}</p>
-          <p><strong>Region:</strong> {geoData.region}</p>
-          <p><strong>City:</strong> {geoData.city}</p>
-          <p><strong>Latitude:</strong> {geoData.latitude}</p>
-          <p><strong>Longitude:</strong> {geoData.longitude}</p>
-          <AirQuality latitude={geoData.latitude} longitude={geoData.longitude} />
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div>
+            <h3>Geolocation Data:</h3>
+            <p><strong>IP Address:</strong> {geoData.ip_address}</p>
+            <p><strong>Country:</strong> {geoData.country}</p>
+            <p><strong>Region:</strong> {geoData.region}</p>
+            <p><strong>City:</strong> {geoData.city}</p>
+            <p><strong>Latitude:</strong> {geoData.latitude}</p>
+            <p><strong>Longitude:</strong> {geoData.longitude}</p>
+          </div>
 
-        <p><br/>This application is brought to you by the use of the following API providers
-        <br/><strong><i>AbstractApi</i></strong>
-        <br/><strong><i>IQAir</i></strong>
-        <br/><strong><i>IPify</i></strong></p>
+          <div style={{ marginLeft: '10px' }}>
+            <AirQuality latitude={geoData.latitude} longitude={geoData.longitude} />
+          </div>
         </div>
       )}
+
+      <p><br/>This application is brought to you by the use of the following API providers
+      <br/><strong><i>AbstractApi</i></strong>
+      <br/><strong><i>IQAir</i></strong>
+      <br/><strong><i>IPify</i></strong></p>
     </div>
   );
 };
